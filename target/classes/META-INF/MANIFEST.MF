@@ -1,13 +1,5 @@
 Manifest-Version: 1.0
-
-<<<<<<< HEAD
-Built-By: Renoblack
-Build-Jdk: 1.8.0_202
-=======
 Built-By: DGIP
 Build-Jdk: 1.8.0_111
-
->>>>>>> 49b23e4fbe13abe2dc4f654843c4fa7ae7e406ff
-
 Created-By: Maven Integration for Eclipse
 
