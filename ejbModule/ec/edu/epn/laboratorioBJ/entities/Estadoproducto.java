@@ -10,11 +10,16 @@ import java.util.List;
  * 
  */
 @Entity
+@Table(name = "estadoproducto", catalog = "bddcorpepn", schema = "`Laboratorios`")
 @NamedQuery(name="Estadoproducto.findAll", query="SELECT e FROM Estadoproducto e")
 public class Estadoproducto implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
+	
+	@SequenceGenerator(name="ESTADOPRODUCTO_IDESTADOPROD_GENERATOR", sequenceName="secuencia_estadoproducto",allocationSize=1, catalog="bddcorpepn",schema="`Laboratorios`")
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="ESTADOPRODUCTO_IDESTADOPROD_GENERATOR")
+	
 	@Column(name="id_estadoprod")
 	private String idEstadoprod;
 
